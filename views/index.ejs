@@ -1,0 +1,21 @@
+<% include _header %>
+
+<h1>Welcome to Learn About Me!</h1>
+<div class="post_side">
+	<div class="posts">
+		<div class="post">
+			<% posts.forEach(function(post) { %>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<%= post.content %>
+					</div>
+				</div>
+			<% }) %>
+		</div>
+	</div>	
+	<div class="side">
+		<button type="button" class="btn btn-primary">hide Posts</button>
+	</div>
+</div>
+
+<% include _footer %>
